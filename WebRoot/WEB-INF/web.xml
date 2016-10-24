@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ListBookServlet</servlet-name>
+		<servlet-class>com.tang.controller.ListBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListBookServlet</servlet-name>
+		<url-pattern>/servlet/ListBookServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BuyServlet</servlet-name>
+		<servlet-class>com.tang.controller.BuyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyServlet</servlet-name>
+		<url-pattern>/servlet/BuyServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListCartServlet</servlet-name>
+		<servlet-class>com.tang.ui.ListCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCartServlet</servlet-name>
+		<url-pattern>/servlet/ListCartServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteBookItemServlet</servlet-name>
+		<servlet-class>com.tang.controller.DeleteBookItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteBookItemServlet</servlet-name>
+		<url-pattern>/servlet/DeleteBookItemServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangeQuantityServlet</servlet-name>
+		<servlet-class>com.tang.controller.ChangeQuantityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeQuantityServlet</servlet-name>
+		<url-pattern>/servlet/ChangeQuantityServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClearCartServlet</servlet-name>
+		<servlet-class>com.tang.controller.ClearCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClearCartServlet</servlet-name>
+		<url-pattern>/servlet/ClearCartServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
